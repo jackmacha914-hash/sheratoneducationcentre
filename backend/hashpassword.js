@@ -7,4 +7,4 @@ async function hashPassword(password) {
   console.log('Hashed password:', hashed);
 }
 
-hashPassword('admin123'); // <-- This is the password you want
+hashPassword('sheratonumoja'); // <-- This is the password you want
