@@ -19,7 +19,10 @@ mongoose.connect(mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 })
-.then(() => console.log("✅ MongoDB Connected"))
+.then(async () => {
+  console.log("✅ MongoDB Connected");
+  await createAdmin();   // 🔥 CALL IT HERE
+})
 .catch(err => {
   console.error("❌ MongoDB connection error:", err.message);
   process.exit(1);
