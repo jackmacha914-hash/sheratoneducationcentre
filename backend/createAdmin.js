@@ -1,3 +1,5 @@
+async function createAdmin() {
+  console.log("🚀 createAdmin started");
 // createAdmin.js
 require('dotenv').config(); // Load .env variables
 
