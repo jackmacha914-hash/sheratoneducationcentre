@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admissions | Mutalia Learning Centre</title>
+  <meta name="description" content="Explore our admissions process and download our brochure." />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">Mutalia Learning Centre</div>
+    <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="academics.html">Student Life</a></li>
+        <li><a href="admission.html">Admission</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero admissions-hero" data-aos="fade-up">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Admissions</h1>
+        <p>Join our world-class academic community. Apply today and start your future with us.</p>
+        <a href="#apply-form" class="cta-button">Apply Now</a>
+        <a href="brochure.pdf" class="cta-button download-btn" download="School_Brochure">Download Brochure</a>
+      </div>
+    </div>
+  </section>
+
+<!-- Admissions Form Section -->
+<section class="admissions-form" id="apply-form" aria-label="Admissions Form" data-aos="fade-up" style="padding: 60px 0; background-color: #f9f9f9;">
+  <div class="container" style="max-width: 700px; margin: 0 auto; background-color: #fff; padding: 40px; border-radius: 10px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    <h2 class="section-title" style="text-align: center; font-size: 2rem; color: #2c3e50; margin-bottom: 20px;">Apply Now</h2>
+    <p class="section-intro" style="text-align: center; color: #7f8c8d; margin-bottom: 30px;">Complete this form to start your application to Eagles Emulators Schools.</p>
+    
+    <form action="submit-form.php" method="POST" class="form" style="display: flex; flex-direction: column; gap: 20px;">
+
+      <!-- Student Info -->
+      <div class="form-group">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" required placeholder="Enter student's full name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <div class="form-group">
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <div class="form-group">
+        <label for="county">County of Residence</label>
+        <select id="county" name="county" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+          <option value="" disabled selected>Select County</option>
+          <option value="Nairobi">Nairobi</option>
+          <option value="Mombasa">Mombasa</option>
+          <option value="Kisumu">Kisumu</option>
+          <option value="Kitui">Kitui</option>
+          <option value="Turkana">Turkana</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="previous-school">Previous School</label>
+        <input type="text" id="previous-school" name="previous-school" placeholder="Enter previous school name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <!-- Parent/Guardian Info -->
+      <div class="form-group">
+        <label for="parent-name">Parent/Guardian Name</label>
+        <input type="text" id="parent-name" name="parent-name" required placeholder="Enter parent's full name" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <div class="form-group">
+        <label for="parent-phone">Parent/Guardian Phone Number</label>
+        <input type="tel" id="parent-phone" name="parent-phone" required placeholder="Enter parent's phone number" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Parent/Guardian Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter parent's email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+      </div>
+
+      <!-- Academic Info -->
+      <div class="form-group">
+        <label for="grade">Grade Applying For</label>
+        <select id="grade" name="grade" required style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+          <option value="" disabled selected>Select Grade</option>
+          <option value="Pre-Primary">Play Group</option>
+          <option value="Pre-Primary">Pre-Primary 1</option>
+          <option value="Pre-Primary">Pre-Primary 2</option>
+          <option value="Grade 1">Grade 1</option>
+          <option value="Grade 2">Grade 2</option>
+          <option value="Grade 3">Grade 3</option>
+          <option value="Grade 4">Grade 4</option>
+          <option value="Grade 5">Grade 5</option>
+          <option value="Grade 6">Grade 6</option>
+          <option value="Grade 7">Grade 7</option>
+          <option value="Grade 8">Grade 8</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Additional Information</label>
+        <textarea id="message" name="message" rows="5" placeholder="Any additional information you'd like to provide" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;"></textarea>
+      </div>
+
+      <div class="form-actions" style="text-align: center;">
+        <button type="submit" class="btn-primary" style="background-color: #3498db; color: #fff; border: none; padding: 15px 30px; border-radius: 5px; font-size: 1rem; cursor: pointer; transition: background 0.3s;">Submit Application</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>&copy; 2025 School Name. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
+    <script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.querySelector("nav ul");
+
+hamburger.addEventListener("click", function () {
+    navMenu.classList.toggle("active");
+});
+</script>
+
+</body>
+</html>

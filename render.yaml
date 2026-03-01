@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: school-management-system
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_OPTIONS
+        value: --max_old_space_size=1024
+    plan: free
+    region: oregon
+    healthCheckPath: /api/health
+    autoDeploy: true
+    

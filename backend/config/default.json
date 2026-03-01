@@ -1,0 +1,5 @@
+{
+  "jwtSecret": "7f2f0c1248cf892164e619b209a43a20248586eabc19834e69d73c808082e0af",
+  "mongoURI": "mongodb+srv://jackmacha914:YOUR_PASSWORD_HERE@school0.ynnxkzv.mongodb.net/school_management?retryWrites=true&w=majority",
+  "port": 5000
+}
