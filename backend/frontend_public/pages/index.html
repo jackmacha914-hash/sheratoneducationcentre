@@ -1351,6 +1351,7 @@ window.fetch = async (input, init = {}) => {
                                 <option value="">Select Class</option>
                                 <!-- Pre-Primary (2 years) -->
                                 <optgroup label="Pre-Primary">
+                                    <option value="pg">Play-Group - Age 2-4</option>
                                     <option value="pp1">Pre-Primary 1 (PP1) - Age 4-5</option>
                                     <option value="pp2">Pre-Primary 2 (PP2) - Age 5-6</option>
                                 </optgroup>
@@ -1365,7 +1366,7 @@ window.fetch = async (input, init = {}) => {
                                     <option value="grade6">Grade 6 - Age 11-12</option>
                                     <option value="grade7">Grade 7 - Age 12-13</option>
                                     <option value="grade8">Grade 8 - Age 13-14 (KCPE)</option>
-                                    <option value="grade9">Grade 9</option>
+                                    <option value="grade9">Grade 9 - Age 15-16</option>
                                     <option value="grade10">Grade 10</option>
                                 </optgroup>
                                 
@@ -3406,6 +3407,7 @@ window.fetch = async (input, init = {}) => {
             // Create the Kenyan education system structure
             const kenyanEducationSystem = {
                 'Pre-Primary': [
+                    { id: 'pg', name: 'Play-Group - Age 2-4'}
                     { id: 'pp1', name: 'Pre-Primary 1 (PP1) - Age 4-5' },
                     { id: 'pp2', name: 'Pre-Primary 2 (PP2) - Age 5-6' }
                 ],
